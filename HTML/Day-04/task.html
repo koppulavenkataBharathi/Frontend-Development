@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2-day4</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <p>Gender: <input type="radio" name="gender" id="male"><label for="gender">Male</label> <input type="radio" name="gender" id="female"><label for="gender">Female</label></p>
+            <p>Hobbies: <input type="checkbox" name="hobbies" id="hobbies"><label for="hobbies">Reading</label><input type="checkbox" name="hobbies" id="hobbies"><label for="hobbies">Travelling</label> <input type="checkbox" name="hobbies" id="hobbies">Sports</p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone">
+            <br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="60" rows="5"></textarea>
+            <br>
+            <label for="country">Country:</label>
+            <select name="country" id="select">
+                <option value="US">United States</option>
+                <option value="india">India</option>
+                <option value="russia">Russia</option>
+            </select>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <input type="reset" value="Reset">
+
+</form>
+</body>
+</html>
