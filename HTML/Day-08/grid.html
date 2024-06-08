@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body{
+            height: 100vh;
+            text-align: center;
+        }
+        .nav-bar,.aside-section,.footer-section{
+            background-color: #212121;
+            color:white;
+            margin: 10px;
+        }
+        .nav-bar{
+            padding:2px;
+        }
+        .main-container{
+            height:600px;
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            align-items: stretch;
+
+        }
+        .main-container .main-section{
+
+display: grid;
+grid-template-columns: 200px 200px 200px 200px;
+align-items: stretch;
+justify-content: ;
+        }
+        .main-container div{
+            background-color: rgb(72, 186, 72);
+            margin: 10px;
+            color:white;
+            padding:20px;
+        }
+        .footer-section{
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+<h1>Header</h1>
+    </nav>
+    <section class="main-container">
+    <aside class="aside-section">
+        <h2>Sidebar</h2>
+    </aside>
+    <main class="main-section">
+        <div class="widget">Widget 1</div>
+        <div class="widget">Widget 2</div>
+        <div class="widget">Widget 3</div>
+        <div class="widget">Widget 4</div>
+        
+    </main>
+</section>
+    <footer class="footer-section">
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>
