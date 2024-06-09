@@ -1,0 +1,153 @@
+header{
+    background-color: rgb(145, 141, 141);
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 10px;
+}
+header h2{
+    padding: 10px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    
+}
+footer{
+    background-color: rgb(76, 74, 74);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+main{
+    /* border: 1px solid red; */
+    display: flex;
+    padding-bottom: 130px;
+    background-color: aqua;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+#home{
+    text-align: center;
+    /* border: 1px solid black; */
+    flex-grow: 0.5;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin:20px ;
+}
+#home h2{
+    font-size: 30px;
+}
+#home article{
+    font-size: 18px;
+    
+}
+#info{
+    /* border: 1px solid black; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    font-size: x-large;
+    text-align: justify;
+    padding: 20px;
+    margin: 20px;
+}
+#info h2{
+font-size: 40px;
+}
+#info article{
+    font-size: 20px;
+}
+#skills{
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+
+}
+.skill{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    transition: transform 0.5s;
+
+}
+.skill:hover{
+    background-color: white;
+    transform:scale(1.2)
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 18px;
+}
+main .project1{
+    padding: 20px;
+height: 300px;
+}
+main .project1 p{
+    font-size: 20px;
+}
+main .project1 p span{
+    font-size: 22px;
+}
+body{
+    height: 100vh;
+}
+
+.form-container{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+.form-container h1{
+    font-size: 40px;
+}
+.form-container .container{
+margin: 20px;
+}
+.form-container .container input{
+    padding: 10px;
+    border-radius: 5px;
+}
+.form-container .container label{
+    font-size: 20px;
+    
+    padding-right:20px;
+}
+.form-container .container button{
+    padding: 10px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+  
+  
+  
+  
