@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light</title>
+    
+    <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          background-color: #f0f0f0;
+        }
+  
+        .light-container {
+          text-align: center;
+        }
+  
+        .light {
+          width: 500px;
+          height: 500px;
+          background-color: gray;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+  
+        #toggleBotton {
+          margin-top: 20px;
+        }
+      </style>
+</head>
+<body>
+    <div class="light-container">
+        <div class="light" id="light"></div>
+        <button id="toggleBotton">Switch On</button>
+      </div>
+      <script>
+         const light = document.getElementById("light");
+      const toggleBotton = document.getElementById("toggleBotton");
+
+      let isLightOn = false;
+
+      toggleBotton.addEventListener("click", () => {
+        if (isLightOn) {
+          light.style.backgroundColor = "gray";
+          toggleBotton.textContent = "Switch On";
+        } else {
+          light.style.backgroundColor = "yellow";
+          toggleBotton.textContent = "Switch Off";
+        }
+        isLightOn = !isLightOn;
+      });
+      </script>
+</body>
+</html>

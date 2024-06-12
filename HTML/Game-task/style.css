@@ -1,0 +1,14 @@
+.nav-bar-container{
+    display: flex;
+    justify-content: space-around;
+    background-color:grey;
+    padding:15px 20px;
+}
+.nav-bar-container a{
+    text-decoration: none;
+    color:white;
+    background-color: rgb(10, 5, 50);
+    padding:10px 20px;
+    border: none;
+    border-radius:8px;
+}
