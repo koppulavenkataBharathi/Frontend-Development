@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task Day 12</h1>
+
+
+
+    <script>
+        // Task 1: Check if a Number is Positive, Negative, or Zero
+        var num=5;
+        if (num>0){
+            console.log(num+" is positive number");
+        }
+        else if(num<0){
+            console.log(num+" is negative num");
+        }
+        else{
+            console.log(num+" is zero");
+        }
+
+        // Task 2: Determine Age Group
+        
+        var age=10;
+        if (age >=1 && age<=10){
+            console.log("children");
+
+        }
+        else if (age >=11 && age <=24){
+            console.log("adult");
+        }
+        else if(age >=25 && age <=40){
+            console.log("Teenage");
+        }
+        else{
+            console.log("Old")
+        }
+        // Task 3: Check if a Year is a Leap Year
+
+        // Replace this value with the year you want to check
+var year = 2024;
+
+var isLeapYear;
+
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    isLeapYear = true;
+} else {
+    isLeapYear = false;
+}
+
+console.log("Year " + year + " is a leap year: " + isLeapYear);
+
+
+//Task:4 Check if a Character is a Vowel or Consonant
+
+var char = 'A';
+
+// Convert the character to lower case to simplify comparison
+char = char.toLowerCase();
+
+var isVowel;
+
+if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+    isVowel = true;
+} else {
+    isVowel = false;
+}
+
+if (isVowel) {
+    console.log(char + " is a vowel.");
+} else {
+    console.log(char + " is a consonant.");
+}
+
+
+    </script>
+</body>
+</html>
