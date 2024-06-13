@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Day 13 Task</h1> 
+
+
+   <script>
+//Task 1: Simple Calculator
+//Objective: Write a script that acts as a simple calculator. The script should take two numbers and an operator as input and perform the corresponding operation.
+
+var num1=5;
+var num2=2;
+var operator='*';
+switch (operator){
+    case '+':
+    console.log(num1+num2+ " sum");
+    break;
+    case '-':
+        console.log(num1-num2 +" sub");
+    break;
+    case '*':
+        console.log(num1*num2 + " mul");
+        break;
+    case '/':
+        console.log(num1/num2 + " div");
+        break;
+
+    case '%':
+        console.log(num1%num2 +" Mod");
+        break;
+    default:
+        console.log("not matched any operator");
+        break;
+}
+
+
+//Task 2: Print the First 10 Multiples of 5
+//Objective: Write a script that uses a for loop to print the first 10 multiples of 5.
+
+for (var i=1;i<=10;i++){
+    console.log(i*5);
+
+}
+
+
+// Task 3: Calculate Factorial of a Number
+
+// Objective: Write a script that uses a for loop to calculate the factorial of a given number.
+
+let n = 5; 
+let result = 1;
+if (n < 0) {
+    result = undefined; // Factorial is not defined for negative numbers
+} else if (n === 0 || n === 1) {
+    result = 1;
+} else {
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }
+}
+
+console.log(result); // Output: 120
+
+
+// Task 4: FizzBuzz
+
+// Objective: Write a script that uses a for loop to print numbers from 1 to 100. For multiples of three, print "Fizz" instead of the number and for multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz".
+
+for(var i=1;i<=100;i++){
+    if(i%3==0 && i%5==0){
+        console.log("Fizz Buzz");
+    }
+    else if(i%3==0){
+        console.log("Fizz");
+
+    }
+    else if(i%3==0){
+        console.log("Buzz");
+    }
+    else{
+        console.log(i);
+    }
+}
+
+
+
+
+
+
+
+
+   </script>
+</body>
+</html>
