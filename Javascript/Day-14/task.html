@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Day 14 task</h1>
+
+    <script>
+      // Find Maximum Element
+
+      var numbers = [23, 45, 67, 12, 89, 34];
+      var max = numbers[0];
+      for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] >= max) {
+          max = numbers[i];
+        }
+      }
+
+      console.log(max);
+
+      // Task 2:
+      // Reverse Array
+
+      var numbers = [1, 2, 3, 4, 5];
+      for(let i=numbers.length-1;i>=0;i--){
+          console.log(numbers[i]);
+      }
+
+      // Task 3 :
+      // Find Unique Elements
+      // Objective: Create a new array that contains only the unique elements from an existing array (remove duplicates).
+      var numbers = [1, 2, 3, 1, 2, 4, 5, 4, 6];
+      var singleNumbers = [];
+      for (let i = 0; i < numbers.length; i++) {
+        
+        if (!singleNumbers.includes(numbers[i])) {
+          singleNumbers.push(numbers[i]);
+        }
+      }
+      console.log(singleNumbers);
+
+      //  Task 4 :
+      // Flatten a Multidimensional Array
+      // Objective: Flatten a multidimensional array into a single-dimensional array.
+
+      var matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+      ];
+      var flattenedArray = matrix.flat();
+      console.log(flattenedArray);
+
+      // Find the Average of Array Elements
+      //numbers = [1, 2, 3, 4, 5];
+      // Write a program that takes an array of numbers and calculates the average of all elements in the array.
+
+      var numbers = [1, 2, 3, 4, 5, 6, 7];
+      var sum = 0;
+      for (let i = 0; i < numbers.length; i++) {
+        sum = sum + numbers[i];
+      }
+      var avg = sum / numbers.length;
+      console.log(avg);
+
+      // Task 6:
+      // Find All Pairs of Elements with a Given Sum
+      // Write a program that finds all pairs of elements in an array that add up to a specific target sum
+      // array = [1, 2, 3, 4, 5, 6, 7];
+
+      // out put:  Output: [[1, 7], [2, 6], [3, 5]]
+
+      let array = [1, 2, 3, 4, 5, 6, 7];
+      let targetSum = 8;
+      let pairs = [];
+      let complements = {};
+
+      for (let i = 0; i < array.length; i++) {
+        let complement = targetSum - array[i];
+        if (complements[complement] !== undefined) {
+          pairs.push([complement, array[i]]);
+        }
+        complements[array[i]] = i;
+      }
+
+      console.log(pairs);
+    </script>
+  </body>
+</html>
