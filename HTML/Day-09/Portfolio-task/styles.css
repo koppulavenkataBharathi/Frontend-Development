@@ -146,7 +146,16 @@ margin: 20px;
     margin-left: 30px;
 }
 
+table{
+    border-collapse: collapse;
+    margin-top: 50px;
+    width:700px;
 
+}
+tr,th,td{
+    padding: 10px;
+    text-align: center;
+}
   
   
   
