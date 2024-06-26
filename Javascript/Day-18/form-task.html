@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        
+        <div class="form-elements">
+            <div class="input-container">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="input-container">
+                <label for="mobile">Mobile:</label>
+                <input type="text" name="mobile" id="mobile">
+            </div>
+            <div class="input-container">
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+            <div class="input-container">
+                <label for="dob">DOB:</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="input-container">
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" cols="40" rows="8"></textarea>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" name="accept-rules" id="accept-rules">
+                <span>Accept Terms and Conditions</span>
+            </div>
+            <div class="input-container">
+                <input type="submit" value="submit" class="button" id="submit-button">
+                <input type="reset" value="Reset" class="button" id="reset-button">
+            </div>
+        </div>
+        <div class="display-output">
+            
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

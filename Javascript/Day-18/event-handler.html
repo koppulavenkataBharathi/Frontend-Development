@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="console.log('inline Event triggered')"> Inline Event</button>
+     <button id="prop-button">
+        Property Event
+     </button>
+     <button id="add-event-button">Add Event</button>
+
+
+     <script>
+        let propButton=document.getElementById("prop-button");
+
+        propButton.onclick=function(){
+            console.log("Prop button triggered");
+        }
+
+        var addEventButton=document.getElementById("add-event-button");
+
+        addEventButton.addEventListener('click',function(){
+            console.log("add event button trigered")
+;        })
+addEventButton.addEventListener('mouseover',function(){
+    addEventButton.style.color="red";
+    console.log("mouse over is triggered");
+})
+
+addEventButton.addEventListener('mouseout',function(){
+    addEventButton.style.color="black";
+    console.log("mouse out is triggered");
+})
+
+
+     </script>
+
+</body>
+</html>
