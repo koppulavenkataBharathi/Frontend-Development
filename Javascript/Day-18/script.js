@@ -6,8 +6,9 @@ Submit.addEventListener('click', function() {
     var Gender = document.getElementById('gender');
     var Dob = document.getElementById('dob');
     var Address=document.getElementById('address');
+    var Accepted=document.getElementById("accept-rules");
+
     var Output = document.getElementsByClassName("display-output")[0]; 
-    
 
     // Create an array of the input values
     var infoArray = [
@@ -15,7 +16,8 @@ Submit.addEventListener('click', function() {
         `Mobile: ${Mobile.value}`,
         `Gender: ${Gender.value}`,
         `DOB: ${Dob.value}`,
-        `Address:${Address.value}`
+        `Address:${Address.value}`,
+        `Accepted Rules:${Accepted.value}`
     ];
     
     // Loop through the array and create a new element for each piece of information
